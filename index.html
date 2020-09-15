@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Elcervantista-Inicio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	 <!--  icon -->
+	 <link rel="icon" href="img/ico.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="/css/estilos.css">
+	</head>
+<body> 	
+<!-------------------------comienso menu------------------------>
+<header>
+    <nav>
+	  <div class="logo">Elcervantista</div>	  
+	 	<label for="btn" class="icon">
+		 <span class="fa fa-bars"></span>
+	 	 </label>
+		 <input type="checkbox" id="btn">
+
+     	  <ul>
+		   <li>
+		  	<a class="active" href="#">Inicio</a>
+		  	 </li>	
+
+		  <li>
+			<label for="btn-1" class="show">Quienes Somos</label>
+			 <a class="somos" href="#">Quienes Somos</a> 
+			 <input type="checkbox" id="btn-1">
+			<ul>
+			  <li><a class="somos" href="/views/somos.html">Somos</a></li>
+			  <li><a class="historia" href="/views/historia.html">Historia</a></li>
+			  <li><a class="vision" href="/views/vision.html">Visión</a></li>
+			  <li><a class="profesores" href="/views/profesores.html">Profesores</a></li>
+			 </ul>
+		   </li>
+		 
+		  <li>
+			<label for="btn-2" class="show">Inscripciones +</label>
+			<a class="inscripcion" href="#">Inscripciones</a>
+			<input type="checkbox" id="btn-2">
+			<ul>
+			  <li><a class="claudia" href="#">atenció<noscript></noscript></a></li>
+			  <li><a class="claudia" href="#">pensul</a></li>
+			  <li><a class="codigo" href="/views/codigo.html">Código</a></li>
+				
+			 </ul>
+		   </li>
+		 
+			<li><a class="potal" href="/views/portal.html">Portal</a></li>
+			<li><a class="cronograma" href="/views/cronograma.html">Cronograma</a></li>
+		</ul>
+	</nav>
+</header>
+<!-------------------------fin menu------------------------>
+<!-------------------------formulario index------------------------>
+<main class="container-fluid bg-1">
+
+	<div class="container-fluid logos">
+		<div class="row">			
+			<div class="col-sm-12 col-md-12">
+			  <h1><b>Gimnasio Academico Cervantes</b></h1>
+			</div>
+			<div class="col-sm-12 col-md-12 img-1">
+				<img class="img-1" src="../img/logo1.png" alt="logo1" width="100%">
+			</div>	
+			<div class="col-sm-12 col-md-12">
+				<h2 class="h2-2"><b>Educamos Con Valores, Sabiduría y Amor</b></h>
+			  </div>		
+		</div> 
+	</div> 
+
+</main>
+
+<!-- Footer -->
+<footer>
+		 <div class="container tel-dir">
+			<div class="row ubicacion">
+			  <div class="col-sm col-sm-4 text-center">
+				<P>Dirección Calle 75 No. 89-10/16 Barrio Florencia</P>
+			  </div>
+			  <div class="col-sm col-sm-4 text-center">
+				<p>Téfono: 4 34 45 37</p>
+			  </div>
+			  <div class="col-sm col-sm-4 text-center email-c">
+				<p class="email-c">email:elcervantista@yahoo.com</p>
+			  </div>
+			</div>
+		  </div>
+
+<footer id="sticky-footer">
+    <div class="container-fluid pie-pie text-center">
+      <small>Copyright &copy; Johan Sebastian Romero Marulanda</small>
+    </div>
+</footer>
+<!-- Footer -->
+
+  <script>
+	  const menuBtn = document.querySelector(".menu-icon span");
+	  const searchBtn = document.querySelector(".search-icon");
+	  const cancelBtn = document.querySelector(".cancel-icon");
+	  const items = document.querySelector(".nav-items");
+	  const form = document.querySelector("form");
+	  menuBtn.onclick = ()=>{
+		items.classList.add("active");
+		menuBtn.classList.add("hide");
+		searchBtn.classList.add("hide");
+		cancelBtn.classList.add("show");
+	  }
+	  cancelBtn.onclick = ()=>{
+		items.classList.remove("active");
+		menuBtn.classList.remove("hide");
+		searchBtn.classList.remove("hide");
+		cancelBtn.classList.remove("show");
+		form.classList.remove("active");
+		cancelBtn.style.color = "#ff3d00";
+	  }
+	  searchBtn.onclick = ()=>{
+		form.classList.add("active");
+		searchBtn.classList.add("hide");
+		cancelBtn.classList.add("show");
+	  }
+	</script>
+
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+</body>
+</html>

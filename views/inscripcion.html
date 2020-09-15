@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Elcervantista-Inscripción</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	 <!--  icon -->
+	<link rel="icon" href="img/ico.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="../css/estilos.css">
+	</head>
+<body> 	
+<!-------------------------comienso menu------------------------>
+<header>
+    <nav>
+	  <div class="logo">Elcervantista</div>	  
+	 	<label for="btn" class="icon">
+		 <span class="fa fa-bars"></span>
+	 	</label>
+		<input type="checkbox" id="btn">
+
+     	<ul>
+		 <li>
+		  <a class="active" href="#">Inicio</a>
+		  </li>	
+
+		  <li>
+			<label for="btn-1" class="show">Quienes Somos</label>
+			 <a class="somos" href="#">Quienes Somos</a> 
+			  <span class="fa fa-plu"></span>			   			   
+			 <input type="checkbox" id="btn-1">
+			<ul>
+			  <li><a class="somos" href="/views/somos.html">Somos</a></li>
+			  <li><a class="historia" href="/views/historia.html">Historia</a></li>
+			  <li><a class="vision" href="/views/vision.html">Visión</a></li>
+			  <li><a class="profesores" href="/views/profesores.html">Profesores</a></li>
+			 </ul>
+		   </li>
+		 
+		  <li>
+			<label for="btn-2" class="show">Inscripciones +</label>
+			<a class="inscripcion" href="#">Inscripciones</a>
+			<input type="checkbox" id="btn-2">
+			<ul>
+			  <li><a class="claudia" href="#">atenció<noscript></noscript></a></li>
+			  <li><a class="claudia" href="#">pensul</a></li>
+			  <li><a class="codigo" href="/views/codigo.html">Código</a></li>
+				
+			 </ul>
+		   </li>
+		 
+			<li><a class="potal" href="/views/portal.html">Portal</a></li>
+			<li><a class="cronograma" href="/views/cronograma.html">Cronograma</a></li>
+		</ul>
+	</nav>
+</header>
+<!-------------------------formulario inscripción------------------------>
+	<main class="container-fluid bg-3">
+
+		<div class="container-fluid caja-1">
+			<div class="row">
+    		<div class="col-sm-12"><img class="logo1 logo3" src="../img/logo1.png" alt="logo1" width="100%"></div>
+			</div>
+
+			<div class="row align-items-center text-center">
+	  		<div class="col-12"><h3><b>Gimnasio Academico Cervantes</b></h3></div>
+			<div class="col-12"><p class="p3"><b>Res.7512 de Nov./97-10-267-24 jul./2009  CÓDIGO DANE 311001094934</b></p></div>
+			<div class="col-12"><p class="p3-date">DATOS DEL ESTUDIANTE</p></div>			  
+			</div>
+		</div>
+
+		<!-------------------------caja-1 final------------------------>
+
+		<!-------------------------caja-2 inicio------------------------>
+		<div class="container caja-2">
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+				<label class="form-check-label-1" for="exampleRadios1">
+				  Niño
+				</label>
+			 </div>
+			  
+		  	<div class="form-check">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+				<label class="form-check-label-2" for="exampleRadios2">
+			 	 Niña
+				</label>
+		  	</div>	
+		</div>
+
+<!-------------------------caja-2 final------------------------>
+<!-------------------------caja-3 inicio----------------------->
+
+		<div class="container caja-3">
+			
+			<form action="" class="form-inline">
+				<div class="row">
+					<div class="form-group">
+						<label for="col-form-label-sm" class="control-label col-md-2 nombres">Nombres</label>
+						<div class="col-sm-5  text-center align-items-start">
+						<input type="text" class="form-control" name="nombres" id="nombres" placeholder="nombres" tabindex="1">
+						</div>
+					</div>			  
+			
+					<div class="form-group">
+						<label for="col-form-label-sm" class="control-label col-md-2 apellido">Apellidos</label>
+						<div class="col-sm-5">
+						<input type="text" class="form-control"name="apellido" id="apellidos" placeholder="apellidos" tabindex="2">
+						</div>
+					</div>
+	
+					<div class="form-group">
+						<label for="col-form-label-sm" class="control-label col-md-2 fecha">Fecha Naci/to</label>
+						<div class="col-sm-5">
+						<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+						</div>
+					</div>
+
+				</div>
+			</form>
+		</div>
+
+<!-------------------------caja-3 final------------------------>
+<!-------------------------caja-4 inicio----------------------->
+	
+
+	<div class="container caja-4">
+		
+		<form action="" class="form-inline">
+			<div class="row">
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label col-md-2 edad">Edad</label>
+					<div class="col-sm-5">
+					<input type="number" class="form-control" name="edad" id="edad" placeholder="edad">
+					</div>
+				</div>		  
+		
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label col-md-2 documento">Documento</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="documento" id="documento" placeholder="documento">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label col-md-2 fecha">Hermanos</label>
+					<div class="col-sm-5">
+					<input  type="number" class="form-control" name="hermanos" id="hermanos" placeholder="hermanos">
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+
+
+<!-------------------------caja-4 final------------------------>
+
+<!-------------------------caja-5 inicio------------------------>
+
+	<div class="container caja-5">
+		
+		<form action="" class="form-inline">
+			<div class="row">
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label col-md-2 edad">Teléfono</label>
+					<div class="col-sm-5">
+					<input type="tel" class="form-control" name="tel" id="tel" placeholder="telefono">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label col-md-2 direccion">Direccion</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="direccion" id="direccion" placeholder="direccion">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label col-md-2 fecha">email</label>
+					<div class="col-sm-5">
+					<input  type="email" class="form-control" name="email" id="email" placeholder="email">
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+
+
+<!-------------------------caja-5 final------------------------>
+
+<!-------------------------caja-6 inicio------------------------>
+
+		
+	<div class="container-fluid caja-6">
+				
+		<form action="" class="form-inline">
+			<div class="row">
+						<div class="form-group">
+							<label for="col-form-label-sm" class="control-label col-md-2 curso">Curso Anterior</label>
+							<div class="col-sm-5">
+							<input type="text" class="form-control" name="Curso Viene" id="Curso Viene" placeholder="Curso Anterior" tabindex="1">
+							</div>
+						</div>
+					</div>		
+				  
+					<div class="row">			
+						<div class="form-group">
+							<label for="col-form-label-sm" class="control-label col-md-2 viene">Viene del Colegio</label>
+							<div class="col-sm-5">
+							<input type="text" class="form-control" name="Viene Colegio" id="Viene Colegio" placeholder="Colegio de donde Viene" tabindex="2">
+							</div>
+						</div>
+					</div>	
+
+					<div class="row">
+						<div class="form-group">
+							<label for="col-form-label-sm" class="control-label col-md-2 fecha">Años Repitidos</label>
+							<div class="col-sm-5">
+							<input class="form-control" type="text" value="tel" id="example-date-input" placeholder="Años Perdidos" tabindex="3">
+							</div>
+						</div>
+					</div>	
+				</form>
+			</div>
+
+<!-------------------------caja-6 final----------------------->
+
+<!-------------------------caja-7 inicio----------------------->
+	<div class="container caja-7">
+		<form action="">
+			 <label for="validation textarea"></label>
+			 <textarea type="text" name="mensaje"  id="textarea" placeholder="Por que perdio año"></textarea> 
+			 </div>
+		</form>
+	</div>
+<!-------------------------caja-7 final----------------------->
+
+<!-------------------------caja-8 inicio----------------------->
+
+	<div class="container caja-8">
+		
+		<form action="" class="form-inline">
+			<div class="row text-center align-items-start">
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label eps">E.P.S.</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="eps" id="eps" placeholder="E.P.S." tabindex="1">
+					</div>
+				</div>		 
+		
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label enfermedad">Enfermedad</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="enfermedad" id="enfermedad" placeholder="Padese Enfermedad" tabindex="2">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label operaciones">Operaciones</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="Operaciones" id="enfermedad" placeholder="Operaciones" tabindex="3".>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+<!-------------------------caja-8 final------------------------>
+<!-------------------------caja-9 inicio----------------------->
+
+	<div class="container caja-9">
+		
+		<form action="" class="form-inline">
+			<div class="row">
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label terapias">Terapia sicologia</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="e.p.s" id="e.p.s" placeholder="Terapias sicologia" tabindex="1">
+					</div>
+				</div>		 
+	
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label terapia">Otras Terapias</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="enfermedad" id="enfermedad" placeholder="Otras Terapias" tabindex="2">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="col-form-label-sm" class="control-label mas-terapias">Mas Terapias</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="Operaciones" id="enfermedad" placeholder="Mas Terapias" tabindex="3".>
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+
+
+<!-------------------------caja-9 final------------------------>
+<!-------------------------caja-10 inicio----------------------->
+
+
+<!-------------------------caja-10 inicio----------------------->
+	<div class="container caja-10">
+		<h2. class="h2-c-10">Datos de La Madre</h2.>			
+			<form action="" class="form-inline">
+
+				<div class="row nombre-m">
+					<div class="form-group">
+					<label for="col-form-label-md" class="control-label nombres">Nombres</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="nombres" id="nombres" placeholder="nombres" tabindex="1">
+					</div>
+					</div>
+				
+				<div class="form-group">
+					<label for="col-form-label-md" class="control-label apellido">Apellidos</label>
+					<div class="col-sm-5">
+					<input type="text" class="form-control" name="apellido" id="apellidos" placeholder="apellidos" tabindex="2">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="col-form-label-md" class="control-label celular">Celular</label>
+					<div class="col-sm-5">
+						<input  type="tel" class="form-control" name="tel" id="tel" placeholder="número" tabindex="2">
+					</div>
+				</div>
+			</div>
+
+			<div class="row empresa-m">
+				<div class="form-group">
+					<label for="col-form-label-md" class="control-label ocupacion">Ocupación</label>
+					<div class="col-sm-5  text-center align-items-start">
+					<input type="text" class="form-control" name="nombres" id="nombres" placeholder="Ocupación" tabindex="1">
+					</div>
+				</div>
+						
+				<div class="form-group">
+					<label for="col-form-label-md" class="control-label labora">Donde Trabaja</label>
+					<div class="col-sm-5">
+					<input  type="text" class="form-control" name="tel" id="tel" placeholder="Donde Trabaja" tabindex="2">
+					</div>
+				</div>
+	
+				<div class="form-group">
+					<label for="col-form-label-md" class="control-label t-e-madre">Teléfono</label>
+					<div class="col-sm-5">
+					<input  type="tel" class="form-control" name="tel" id="tel" placeholder="Teléfono" tabindex="2">
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+
+
+<!-------------------------caja-10 fin----------------------->
+
+<!-------------------------caja-11 inicio----------------------->
+
+
+<div class="container caja-11">
+	<h2. class="h2-c-10">Datos del Padre</h2.>			
+		<form action="" class="form-inline">
+
+			<div class="row nombre-m">
+				<div class="form-group">
+				<label for="col-form-label-md" class="control-label nombres">Nombres</label>
+				<div class="col-sm-5">
+				<input type="text" class="form-control" name="nombres" id="nombres" placeholder="nombres" tabindex="1">
+				</div>
+				</div>
+			
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label apellido">Apellidos</label>
+				<div class="col-sm-5">
+				<input type="text" class="form-control"name="apellido" id="apellidos" placeholder="apellidos" tabindex="2">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label celular">Celular</label>
+				<div class="col-sm-5">
+					<input  type="tel" class="form-control" name="tel" id="tel" placeholder="número" tabindex="2">
+				</div>
+			</div>
+		</div>
+
+		<div class="row empresa-m">
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label ocupacion">Ocupación</label>
+				<div class="col-sm-5  text-center align-items-start">
+				<input type="text" class="form-control" name="nombres" id="nombres" placeholder="Ocupación" tabindex="1">
+				</div>
+			</div>
+					
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label labora">Donde Trabaja</label>
+				<div class="col-sm-5">
+				<input  type="text" class="form-control" name="tel" id="tel" placeholder="Donde Trabaja" tabindex="2">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label t-e-madre">Teléfono</label>
+				<div class="col-sm-5">
+				<input  type="tel" class="form-control" name="tel" id="tel" placeholder="Teléfono" tabindex="2">
+				</div>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+
+<!-------------------------caja-11 fin----------------------->
+
+<!-------------------------caja-12 inicio----------------------->
+
+
+<div class="container caja-12">
+	<h2. class="h2-c-10">Datos del Acudiente</h2.>			
+		<form action="" class="form-inline">
+
+			<div class="row nombre-m">
+				<div class="form-group">
+				<label for="col-form-label-md" class="control-label nombres">Nombres</label>
+				<div class="col-sm-5">
+				<input type="text" class="form-control" name="nombres" id="nombres" placeholder="nombres" tabindex="1">
+				</div>
+				</div>
+			
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label apellido">Apellidos</label>
+				<div class="col-sm-5">
+				<input type="text" class="form-control" name="apellido" id="apellidos" placeholder="apellidos" tabindex="2">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label celular">Celular</label>
+				<div class="col-sm-5">
+				<input class="form-control" type="tel" name="tel" id="tel" placeholder="número">
+				</div>
+			</div>
+		</div>
+
+		<div class="row empresa-m">
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label ocupacion">Ocupación</label>
+				<div class="col-sm-5  text-center align-items-start">
+				<input type="text" class="form-control" name="nombres" id="nombres" placeholder="Ocupación" tabindex="1">
+				</div>
+			</div>
+					
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label labora">Donde Trabaja</label>
+				<div class="col-sm-5">
+				<input  type="text" class="form-control" name="tel" id="tel" placeholder="Donde Trabaja" tabindex="2">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="col-form-label-md" class="control-label t-e-madre">Teléfono</label>
+				<div class="col-sm-5">
+				<input  type="tel" class="form-control" name="tel" id="tel" placeholder="Teléfono" tabindex="2">
+				</div>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+
+<!-------------------------formulario final------------------------>
+	</main>
+
+  <script>
+	  const menuBtn = document.querySelector(".menu-icon span");
+	  const searchBtn = document.querySelector(".search-icon");
+	  const cancelBtn = document.querySelector(".cancel-icon");
+	  const items = document.querySelector(".nav-items");
+	  const form = document.querySelector("form");
+	  menuBtn.onclick = ()=>{
+		items.classList.add("active");
+		menuBtn.classList.add("hide");
+		searchBtn.classList.add("hide");
+		cancelBtn.classList.add("show");
+	  }
+	  cancelBtn.onclick = ()=>{
+		items.classList.remove("active");
+		menuBtn.classList.remove("hide");
+		searchBtn.classList.remove("hide");
+		cancelBtn.classList.remove("show");
+		form.classList.remove("active");
+		cancelBtn.style.color = "#ff3d00";
+	  }
+	  searchBtn.onclick = ()=>{
+		form.classList.add("active");
+		searchBtn.classList.add("hide");
+		cancelBtn.classList.add("show");
+	  }
+	</script>
+
+
+  	<script src="js/jquery-3.2.1.js"></script>
+  	<script src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	  <!-- Scroll Reveal -->
+	  <script src="https://unpkg.com/scrollreveal"></script>
+	  <script src="main.js"></script>
+</body>
+</html>

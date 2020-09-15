@@ -1,0 +1,1208 @@
+
+/*Responsive Dropdown Menu Bar with HTML & CSS | CodingNepal*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+/*----------------------------abre menu----------*/
+
+
+header{
+	background: #f5e5041a;
+}
+
+nav:after{
+	content:"";
+	clear: both;
+	display: table;
+}
+
+nav .logo{
+	float: left;
+	color: rgb(22, 214, 22);
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 70px;
+	padding-left: 60px;
+}
+
+nav ul{
+	float: right;
+	list-style: none;
+	margin-right: 40px;
+	position: relative;
+}
+/*fondo de los boton*/
+nav ul li{
+	
+	background: #f8fafa56;
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 2rem;
+}
+
+nav ul li a{
+	/*botones textos 1 2 y 3*/
+	color: #8d01a0;
+	text-decoration: none;
+	line-height: 70px;
+	font-size: 18px;
+	padding: 8px 15px;
+}
+
+nav ul li a:hover{
+	background: white;
+	color: #00ff00;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #00ff00, 
+	            0 0 5px #edff21;
+}
+
+nav ul ul{
+	position: absolute;
+	top: 90px;
+	border-top: 3px solid #04fa2d;/* linea corre*/
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+	z-index: 100;
+}
+
+nav ul ul ul{
+	border-top: none;
+}
+nav ul li:hover > ul{
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+}
+/* tercer item de servicio*/
+nav ul ul li{
+	position: relative;
+	margin:0px;
+	width: 150px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid rgba 0,0,0,0.3;
+}
+
+nav ul ul li a{
+	line-height: 50px;
+}
+
+nav ul ul ul li{
+	position: relative;
+	top: -70px;
+	left: 150px;
+}
+
+.fa-plus{
+	margin-left: 40px;
+	font-size: 15px;
+}
+
+.show, .navbar-toggler, input{
+	display: none;
+}
+
+.icon{
+	display: block;
+	color: rgb(21, 197, 15);
+	position: absolute;
+	right: 40px;
+	line-height: 70px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+
+
+
+/* -----------------item menu-----------*/
+
+.active {
+	color: #ae2029;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #172a11;
+}
+
+.somos{
+	color: #ff7214;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgb(24, 1, 1);
+}
+
+.historia{
+	color: #ff229d;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #172a11;
+}
+
+.vision{
+	color: #14dbff;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #172a11;;
+
+}
+
+.profesores{
+	color: #f5ff3d;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #172a11;;
+
+}
+
+.inscripcion{
+	color: #f5ff3d;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #172a11;;
+
+}
+
+.codigo{
+	color: #ff0025;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #172a11;
+}
+
+@media all and (max-wodth: 968px){
+
+	nav ul{
+		margin-right: 0px;
+		float: left;
+
+	}
+
+	nav .logo{
+		padding-left: 30px;
+		width: 100%;
+	}
+
+	nav ul li, nav ul ul li{
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul{
+		top: 70px;
+		position: static;
+		border-top: none;
+		float: none;
+		display: none;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.show{
+		display: block;
+		color: rgb(236, 8, 8);
+		font-size: 15px;
+		padding: 0 20px;
+		line-height: 70px;
+		cursor: pointer;
+	}
+	.show:hover{
+		color: #00ff00;
+	}
+
+	nav ul li a.show:hover{
+		box-shadow: none;
+	}	
+	nav ul ul ul li{
+		position: static;
+	}
+
+		nav ul ul li{
+			border-bottom: 0px;
+		}
+
+	nav ul ul ul a{
+		padding-left: 80px;
+	}
+
+	nav ul li a:hover{
+		box-shadow: none;
+	}
+
+	.show + a, ul{
+		display: none;
+	}
+}
+
+/* -------------------cierre menu--------------------------*/
+
+/* -------------------inicio-------------------------*/
+
+
+.bg-1{
+
+	height: 35.5rem;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.87)30%,rgba(255,255,255,0)60%), 
+	url(../img/foto5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.logos{
+	position: relative;
+	width: 30%;
+	padding: 1%;
+	display: flex;
+	left: -33%;
+}
+
+h1{
+	display: flex;
+	position: relative;
+	width: 100%;	
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 2vw;
+	margin-top: 14%;
+	margin-left: 10%;
+	color: rgb(33, 201, 33);
+	text-shadow: 1px 1px 1px #172a11;
+}
+
+.img-1{
+	display: flex;
+	width: 15vw;
+	margin-top: 3%;
+	margin-left: 15%;
+
+}
+
+.h2-2{
+	display: flex;
+	position: relative;
+	width: 100%;	
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.3vw;
+	margin-top: 10%;
+	margin-left: 15%;
+	color: rgb(33, 201, 33);
+	text-shadow: 1px 1px 1px #172a11;
+}
+
+.titulo-somos{
+	display: fles;
+	position: absolute;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(22, 172, 22);
+	margin-top: -1px;
+	margin-left: 2.5rem;
+}
+
+.img-fluid-objetivo1{
+	display: fles;
+	position: relative;
+	width: 90%;
+	margin-top: 3rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.img-10-fluid{
+	display: fles;
+	position: relative;
+	width: 90%;
+	margin-top: 3rem;
+	border-radius: 10px 10px 10px 10px;
+
+
+}
+
+.p-somos{
+	display: fles;
+	position: absolute;
+	width: 86%;
+	text-align: left;
+	margin-left: 2.5rem;
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+.foo-somos{
+
+	display: fles;
+	position: absolute;
+	margin-top: 75vh;
+}
+
+/* -------------------fin - bg 1 --------------------------*/
+
+/* -------------------somos bg 1 --------------------------*/
+
+
+.bg-somos {
+	display: flex;
+	position: relative;
+	margin: 0;
+	height: 41.7rem;
+	background-image: url(../img/eslogan.png); 	
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.titulo-somos{
+	display: fles;
+	position: relative;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(22, 172, 22);
+	margin-top: 1px;
+}
+
+.img-fluid-objetivo1{
+	display: fles;
+	position: absolute;
+	width: 90%;
+	margin-top: 1px;
+	margin-left: 2.5rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.p-somos{
+	display: fles;
+	position: absolute;
+	width: 89%;
+	margin-top: 19rem;
+	margin-left: 2.7rem;
+}
+
+.img-10-fluid{
+	display: fles;
+	position: relative;
+	width: 90%;
+	margin-top: 2.5rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.footer-somos{
+	display: fles;
+	position: relative;
+	margin-top: -13vh;
+}
+
+/* -------------------fin-somos--------------------------*/
+
+/* -------------------historia--------------------------*/
+
+
+.bg-historia {
+	display: flex;
+	position: absolute;
+	margin: 0;
+	height: 41.7rem;
+	background-image: url(../img/eslogan.png); 	
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.historia-sub{
+	display: flex;
+	width: 15vw;
+	margin-top: 3%;
+	margin-left: 15%;
+}
+
+.titulo-historia{
+	display: fles;
+	position: absolute;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(22, 172, 22);
+	margin-top: 1px;
+	margin-left: 2.5rem;
+}
+
+.img-fluid-objetivo2{
+	display: fles;
+	position: relative;
+	width: 90%;
+	margin-top: 5rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.img-fluid-foto-4{
+	display: fles;
+	position: relative;
+	width: 100%;
+	margin-top: 3rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.p-historia{
+	display: fles;
+	position: absolute;
+	width: 86%;
+	margin-top: 2px;
+	text-align: left;
+	margin-left: 2.5rem;
+	color: green;
+	font-weight: 700;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.footer-historia{
+	display: fles;
+	position: absolute;
+	margin-top: -13vh;
+}
+
+/*---------------fin historia-----------*/
+
+/*---------------visión-----------*/
+
+
+.bg-vision {
+
+	margin: 0;
+	height: 41.7rem;
+	background-image: url(../img/eslogan.png); 	
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.titulo-vision{
+	display: fles;
+	position: relative;
+	width: 50%;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(22, 172, 22);
+	margin-top: 0;
+	margin-left: 5rem;
+}
+
+.img-fluid-foto2{
+	display: fles;
+	position: absolute;
+	width: 60%;
+	margin-top: 9rem;
+	margin-left: 8rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.p-vision{
+	display: fles;
+	position: absolute;
+	margin-top: 5;
+	width: 75%;
+	margin-left: 5rem;
+	color: green;
+	font-weight: 700;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+.img-foto-fluid{
+	display: fles;
+	position: absolute;
+	margin-left: auto;
+	width: 60%;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.titulo-mision{
+	display: fles;
+	position: absolute;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(22, 172, 22);
+	margin-top: 25rem;
+
+}
+
+.p-mision{
+	display: fles;
+	width: 75%;
+	margin-top: 29rem;
+	color: green;
+	font-weight: 700;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+.footer-vision{
+	display: fles;
+	position: absolute;
+	margin-top: 75vh;
+}
+
+
+/*---------------fin historia-----------*/
+
+/*---------------visión-----------*/
+
+.bg-codigo {
+	display: flex;
+	position: absolute;
+	margin: 0;
+	height: 41rem;
+	background-image: url(../img/eslogan.png); 	
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+.caja-c1{
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	min-height: 20vh;
+	margin-top: 1rem;
+	background: rgb(247, 246, 245);
+	width: 100%;
+	height: 20vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+	z-index: 1;
+ }
+
+
+.titulo-codigo{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2vw;
+	color: rgb(33, 201, 33);
+	margin-top: -4rem;
+	margin-left: 20rem;
+
+ }
+
+ .codigo-texto{
+	display: flex;
+	position: absolute;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.3vw;
+	color: rgb(33, 201, 33);
+	margin-top: -2rem;
+ }
+
+.Obligatorio{
+	display: flex;
+	position: absolute;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.3vw;
+	color: #f80717;
+	margin-top: 2rem;
+	margin-left: 15vw;
+}
+
+
+.animate-bg{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 13rem;
+	margin-left: 27rem;
+	width: 70vw;
+	height: 50vh;
+}
+
+.caja-codigo{
+	position: absolute;
+	width: 40vw;
+	padding: 10;
+    background: linear-gradient(90deg, rgba(238, 237, 229, 0.616), #04ee18); 
+}
+
+h4{
+	margin-top: 1.5rem;
+	font-family:  Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2vw;
+	color: white;
+}
+
+.mando{
+	margin-top: 0rem;
+	font-family:  Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2vw;
+	color: white;
+}
+
+.clave{
+	margin-top: 0rem;
+	font-family:  Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: rgb(237, 245, 238);
+}
+
+.btn{
+	margin-top: 1rem;
+	margin-left: 5rem;
+	width: 40%;
+	font-family:  Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2vw;
+	font-weight: 500;
+	color: rgb(241, 247, 242);
+	background: rgb(12, 182, 12);
+}
+
+hr{
+	background: rgb(12, 133, 8);
+}
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 1rem);
+	height: calc(100% + 1rem);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
+
+/*------------FONDO inscripcion-------------*/
+/*------------caja fondo-------------*/
+
+.bg-3 {
+	display: flex;
+	position: absolute;
+	margin: -0;
+	height: 100rem;
+	background-image: url(../img/eslogan.png); 	
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*------------FONDO inscripcion-------------*/
+/*------------caja 1 inscripcion-------------*/
+
+.caja-1{
+	display: flex;
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70vw;
+	height: 17vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem
+
+}
+
+
+.logo3{
+	display: flex;
+	position: absolute;
+	width: 6vw;
+	margin-top: 6px;
+	margin-left: 2rem;
+}
+
+
+h3{
+	display: flex;
+	position: relative;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 2.5vw;
+	color: rgb(33, 201, 33);
+	margin-top: 1px;
+	margin-left: 16vw;
+
+}
+
+.p3{
+	display: flex;
+	position: relative;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.1vw;
+	color: rgb(33, 201, 33);
+	margin-top: -10px;
+	margin-left: 17vw;
+}
+.p3-date{
+	display: flex;
+	position: relative;
+	width: 100%;
+	margin-top: -1vw;
+	margin-left: 25vw;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5vw;
+	font-weight: 600;
+	color: rgb(33, 201, 33);
+}
+
+
+/*------------ fin  .caja-1-------------*/
+
+/*------------caja 2 inscripcion-------------*/
+
+.caja-2{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10.2rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70vw;
+	height: 6vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+.form-check {
+	display: flex;
+	margin-right: 5vw;
+	margin-left: 5vw;
+	margin-top: 1rem;
+
+}
+
+.form-check-label-1{
+	color: rgb(10, 241, 48);
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.3vw;
+
+}
+
+
+.form-check-label-2{
+	color: rgb(10, 241, 48);
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.3vw;
+}
+
+
+
+/*------------------fin caja 2 -----------------------*/
+
+/*----------------------caja 3----------------------*/
+
+.caja-3{
+	display: flex;
+	position: absolute;
+	margin-top: 13.3rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70vw;
+	height: 11vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+.nom-apelli{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	margin-top: 1vh;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5vw;
+	color: rgb(33, 201, 33);
+	text-align: center;
+}
+
+.nombres{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+	margin-left: 1rem;
+}
+
+.apellido{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+	margin-left: 1rem;
+}
+
+.fecha{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+
+
+/*------------------------fin caja 3 -----------------------*/
+
+/*------------------------ caja 4-------------------------*/
+
+.caja-4{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 18.8rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70vw;
+	height: 11vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+ .doc-edad-fecha{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	margin-top: 1vh;
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5vw;
+	color: rgb(33, 201, 33);
+}
+
+.edad{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+.documento{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+.hermanos{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+
+/*------------------------fin caja 4 -----------------------*/
+
+/*------------------------ caja 5-------------------------*/
+
+.caja-5{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 24.3rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70vw;
+	height: 11vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+.tel{
+	
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+
+.direccion{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+
+.email{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+/*------------------------fin caja 5 -----------------------*/
+
+/*------------------------ caja formulario 6-------------------------*/
+
+
+.caja-6{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 29.8rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70vw;
+	height: 11vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+ .curso{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+ .viene{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+.años{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+/*------------------------fin caja 6 -----------------------*/
+
+/*------------------------ caja formulario 7-------------------------*/
+.caja-7{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 35.1rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70.9%;
+	height: 16vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+ .rows{
+	 width: 70%;
+ }
+
+.cols{
+	height: 10%;
+}
+
+ .textarea{
+	 width: 70%;
+	 margin: auto;
+ }
+
+
+
+/*------------------------fin caja 7 -----------------------*/
+
+/*------------------------ caja formulario 8-------------------------*/
+
+.caja-8{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 42.9rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70.9%;
+	height: 11vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+ .eps{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+ .enfermedad{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+.mas-terapias{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+
+
+ /*------------------------fin caja 8 -----------------------*/
+
+/*------------------------ caja formulario 9 ------------------------*/
+
+.caja-9{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 48.5rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70.9%;
+	height: 11vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+ .terapias{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+ .terapia{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+.operaciones{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+ /*------------------------fin caja 8 -----------------------*/
+
+/*------------------------ caja formulario 10 ------------------------*/
+
+.caja-10{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 54rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70.9%;
+	height: 30vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+
+.h2-c-10{	
+	display: flex;
+	position: absolute;
+	font-size: 3vh;
+	font-weight: 700;
+	color: rgb(33, 201, 33);
+	margin-top: -10vw;
+}
+
+.nombre-m{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	font-size: 2px;
+	font-weight: 700;
+	color: rgb(33, 201, 33);
+	margin-top: -2vw;
+}
+
+.celular{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+
+.empresa-m{
+	align-items: center;
+	justify-content: center;
+	font-size: 2px;
+	font-weight: 700;
+	color: rgb(33, 201, 33);
+	margin-top: 7vw;
+}
+
+.ocupacion{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+.labora{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+.t-e-madre{
+	font-size: 1vw;
+	color: rgb(33, 201, 33);
+}
+
+/*------------------------fin caja 10 -----------------------*/
+
+/*------------------------ caja formulario 11 ------------------------*/
+
+.caja-11{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 68.6rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70.9%;
+	height: 30vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+
+
+/*------------------------fin caja 11 -----------------------*/
+
+/*------------------------ caja formulario 12 ------------------------*/
+
+.caja-12{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 83.2rem;
+	margin-left: 14vw;
+	background: rgb(247, 246, 245);
+	width: 70.9%;
+	height: 30vh;
+	border: rgb(33, 201, 33) 3px solid;
+	border-radius: 1rem;
+ }
+
+  /* Other Classes for Page Styling */
+
+
+  footer {
+	background: #fffb00;
+	position: absolute;
+	width: 100%;  
+  }
+  .ubicacion{
+	display: flex;
+	position: relative;
+
+	color: #1ec534;
+	width: 100%;
+	padding: 1rem;
+	font-size: 15px;
+	font-weight: 500;
+ }  
+
+ 	.email-c{
+	left: -5vw;
+}
+   .p-footer{
+	font-size: 12px;
+	font-weight: 500;
+  }
+
+  .pie-pie{
+	  background: #07f827;
+	  padding: 1PX;
+  }
+
+  /*------------------------fin caja 11 -----------------------*/
+
